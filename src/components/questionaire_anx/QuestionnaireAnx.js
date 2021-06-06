@@ -24,8 +24,8 @@ export default function QuestionnaireAnx(props) {
               <input
                 type="radio"
                 className="form-check-input"
-                value="1"
-                checked={optionSelected === "1"}
+                value="0"
+                checked={optionSelected === "0"}
               />
               <span>1</span>
             </label>

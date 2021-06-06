@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import _ from 'lodash'
 
 import Navbar from "./components/Navbar";
 import QuestionnaireAnx from "./components/questionaire_anx";
@@ -8,6 +9,7 @@ import Fuzzy from "./middlewares";
 
 function App() {
   const [values, setvalues] = useState({});
+  const [results, setResults] = useState(false)
 
   const getValues = (target, value) => {
     setvalues((values) => ({ ...values, [target]: value }));
@@ -23,22 +25,31 @@ function App() {
       confirmButtonColor: "#21445F",
       cancelButtonColor: "#FF3633",
     });
-    // setvalues({});
   };
+
+  const handleSubmit = () => {
+    if ( Object.keys( values ).length !== 10 ) {
+      return Swal.fire('Oops...', 'Por favor, responda todas las preguntas antes de terminar', 'error')
+    }
+    setResults( !results )
+  }
   return (
     <>
       <Navbar />,
       <div className="container mb-5">
-        {QuestionsAnx.map((question, key) => (
-          <QuestionnaireAnx
-            key={key}
-            number={key + 1}
-            action={getValues}
-            question={question}
-          />
-        ))}
-
-        <Fuzzy data={values} />
+      
+        {
+          results
+          ? <Fuzzy data={ values } />
+          : QuestionsAnx.map((question, key) => (
+            <QuestionnaireAnx
+              key={key}
+              number={key + 1}
+              action={getValues}
+              question={question}
+            />
+          ))
+        }
 
         <div className="d-flex justify-content-end">
           <button
@@ -53,9 +64,7 @@ function App() {
             type="button"
             style={{ backgroundColor: "#607D8B" }}
             className="btn btn-secondary"
-            onClick={() => {
-              console.log(values);
-            }}
+            onClick={ handleSubmit }
           >
             Enviar
           </button>
