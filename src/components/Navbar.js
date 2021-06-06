@@ -1,39 +1,58 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import './questionaire.css'
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
             <div className="container-fluid">
-              <a className="navbar-brand" href="#">Navbar</a>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <Link
+                className="navbar-brand"
+                to="/"
+                style={{ letterSpacing: '3px', fontSize: '30px' }}
+              >
+                LOGO
+              </Link>
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span className="navbar-toggler-icon"></span>
               </button>
           
-              <div className="collapse navbar-collapse" id="navbarColor01">
+              <div
+                className="collapse navbar-collapse" 
+                id="navbarColor01"
+              >
                 <ul className="navbar-nav me-auto">
+
                   <li className="nav-item">
-                    <a className="nav-link active" href="#">Inicio
-                      <span className="visually-hidden">(current)</span>
-                    </a>
+                    <NavLink
+                      activeClassName="active"
+                      className="nav-link"
+                      exact
+                      to="/"
+                    >
+                      Inicio
+                    </NavLink>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Ansiedad</a>
+                    <NavLink
+                      activeClassName="active"
+                      className="nav-link"
+                      exact
+                      to="/anxiety"
+                    >
+                      Ansiedad
+                    </NavLink>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Depresión</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Obsesivo compulsivo</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Estrés postraumático</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Estado de animo</a>
-                  </li>
+
                 </ul>
-         
               </div>
             </div>
           </nav>

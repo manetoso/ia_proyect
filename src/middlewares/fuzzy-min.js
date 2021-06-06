@@ -1,5 +1,4 @@
 export let FuzzyLogic = (function () {
-  "use strict";
   var a = function () {};
   return (
     (a.prototype = {
