@@ -1,1 +1,1 @@
-export {default} from "./Questionnaire_anx"
+export { default } from "./QuestionnaireAnx";

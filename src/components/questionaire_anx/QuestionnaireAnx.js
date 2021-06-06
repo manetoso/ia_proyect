@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Questionnaire_anx(props) {
+export default function QuestionnaireAnx(props) {
   const [optionSelected, setOptionSelected] = useState();
 
   const handleChooise = (e) => {

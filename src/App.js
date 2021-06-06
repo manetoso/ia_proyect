@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 
 import Navbar from "./components/Navbar";
-import Questionnaire_anx from "./components/questionaire_anx";
+import QuestionnaireAnx from "./components/questionaire_anx";
 import { QuestionsAnx } from "./components/Questions";
 import Fuzzy from "./middlewares";
 
@@ -30,7 +30,7 @@ function App() {
       <Navbar />,
       <div className="container mb-5">
         {QuestionsAnx.map((question, key) => (
-          <Questionnaire_anx
+          <QuestionnaireAnx
             key={key}
             number={key + 1}
             action={getValues}
