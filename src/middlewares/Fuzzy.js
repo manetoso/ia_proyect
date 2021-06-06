@@ -3,9 +3,20 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { FuzzyLogic } from "./fuzzy-min";
 
-function Fuzzy(props) {
-  var obj = {
-    crisp_input: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+function Fuzzy({ data }) {
+  let obj = {
+    crisp_input: [
+      data["1"],
+      data["2"],
+      data["3"],
+      data["4"],
+      data["5"],
+      data["6"],
+      data["7"],
+      data["8"],
+      data["9"],
+      data["10"],
+    ],
     variables_input: [
       {
         name: "En qué medida tienes sensaciones de angustia o aprensión",

@@ -38,7 +38,7 @@ function App() {
           />
         ))}
 
-        <Fuzzy />
+        <Fuzzy data={values} />
 
         <div className="d-flex justify-content-end">
           <button
