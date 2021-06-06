@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
+
 import Navbar from "./components/Navbar";
 import Questionnaire_anx from "./components/questionaire_anx";
 import { QuestionsAnx } from "./components/Questions";
-import Swal from "sweetalert2";
+import Fuzzy from "./middlewares";
 
 function App() {
   const [values, setvalues] = useState({});
@@ -35,6 +37,9 @@ function App() {
             question={question}
           />
         ))}
+
+        <Fuzzy />
+
         <div className="d-flex justify-content-end">
           <button
             type="button"
