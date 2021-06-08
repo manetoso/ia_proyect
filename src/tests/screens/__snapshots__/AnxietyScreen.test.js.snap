@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in <AnxietyScreen /> should show the screen correctly 1`] = `
+<Fragment>
+  <div
+    className="container mb-5"
+  >
+    <QuestionnaireAnx
+      action={[Function]}
+      key="0"
+      number={1}
+      question="¿Te llegas a sentir de forma muy incómoda en situaciones sociales
+    como en conversaciones, mientras estas comiendo/bebiendo o dar 
+    alguna charla por miedo a ser examinado o juzgado?"
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="1"
+      number={2}
+      question="¿Te cohíbes en tu forma de ser o no actúas de cierta manera para 
+    que no te humillen o recibas algún tipo de rechazo social?"
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="2"
+      number={3}
+      question="Ahora piensa que estas en una reunión con tus amigos, pero 
+    también con personas que no conoces ¿Sientes incomodidad o 
+    miedo para expresarte o comportarte como normalmente lo haces?"
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="3"
+      number={4}
+      question="Con frecuencia evito situaciones sociales ya que estas me llegan a 
+    causar incomodidad o hasta miedo."
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="4"
+      number={5}
+      question="Es tanto mi miedo a las situaciones sociales a tal grado que no solo 
+    me afecta en lo social, también me afecta en el campo laboral."
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="5"
+      number={6}
+      question="¿Cuándo estoy en situaciones donde tengo que involucrarme 
+    socialmente llego a padecer algún síntoma de ansiedad como por 
+    ejemplo palpitaciones, temblores, molestias gastrointestinales o 
+    tensión muscular?"
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="6"
+      number={7}
+      question="¿Esta ansiedad o miedo a las situaciones sociales a durado más de 
+    6 meses?"
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="7"
+      number={8}
+      question="Evito socializar o situaciones sociales porque padezco una 
+    disformidad corporal u algún tipo de problema de salud."
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="8"
+      number={9}
+      question="Evito socializar o situaciones sociales porque padezco una 
+    disformidad corporal u algún tipo de problema de salud."
+    />
+    <QuestionnaireAnx
+      action={[Function]}
+      key="9"
+      number={10}
+      question="La ansiedad o miedo que siento, no solo me ocurre en 
+    situaciones donde se me involucre socialmente."
+    />
+    <div
+      className="d-flex justify-content-end"
+    >
+      <button
+        className="btn btn-secondary me-3"
+        id="btn-cancel"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#607D8B",
+          }
+        }
+        type="button"
+      >
+        Cancelar
+      </button>
+      <button
+        className="btn btn-secondary"
+        id="btn-send"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#607D8B",
+          }
+        }
+        type="button"
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+</Fragment>
+`;

@@ -72,6 +72,7 @@ export const AnxietyScreen = () => {
 
                 <div className="d-flex justify-content-end">
                     <button
+                        id="btn-cancel"
                         type="button"
                         style={{ backgroundColor: "#607D8B" }}
                         className="btn btn-secondary me-3"
@@ -80,6 +81,7 @@ export const AnxietyScreen = () => {
                         Cancelar
                     </button>
                     <button
+                        id="btn-send"
                         type="button"
                         style={{ backgroundColor: "#607D8B" }}
                         className="btn btn-secondary"
