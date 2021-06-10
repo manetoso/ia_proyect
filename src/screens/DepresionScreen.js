@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import { Redirect } from 'react-router';
 import Swal from "sweetalert2";
 
 import QuestionnaireAnx from "../components/questionaire_anx";
-import { QuestionsAnx } from "../components/Questions";
+import { QuestionsDep } from "../components/Questions";
 import Fuzzy from "../middlewares";
 
-export const AnxietyScreen = () => {
-
+export const DepresionScreen = () => {
     const [values, setvalues] = useState({});
     const [results, setResults] = useState(false)
     const [cancelQuestionnaire, setCancelQuestionnaire] = useState(false)
@@ -52,15 +51,14 @@ export const AnxietyScreen = () => {
     if ( cancelQuestionnaire ) {
         return <Redirect to="/" />
     }
-
     return (
         <>
             <div className="container mb-5">
-            
+                <h1>Depresion</h1>
                 {
                     results
-                    ? <Fuzzy data={ values } topic="Ansiedad" />
-                    : QuestionsAnx.map((question, key) => (
+                    ? <Fuzzy data={ values } topic="Depresion" />
+                    : QuestionsDep.map((question, key) => (
                         <QuestionnaireAnx
                         key={key}
                         number={key + 1}

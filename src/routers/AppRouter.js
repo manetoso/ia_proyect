@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Navbar from '../components/Navbar';
 import { AnxietyScreen } from '../screens/AnxietyScreen';
+import { DepresionScreen } from '../screens/DepresionScreen';
 import HomeScreen from '../screens/HomeScreen';
 
 export const AppRouter = () => {
@@ -19,6 +20,11 @@ export const AppRouter = () => {
                         exact
                         path="/anxiety"
                         component={ AnxietyScreen }
+                    />
+                    <Route
+                        exact
+                        path="/depresion"
+                        component={ DepresionScreen }
                     />
                     <Route
                         exact

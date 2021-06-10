@@ -2,7 +2,7 @@ import React from "react";
 
 import { FuzzyLogic } from "./fuzzy-min";
 
-function Fuzzy({ data }) {
+function Fuzzy({ data, topic }) {
   let obj = {
     crisp_input: [
       data["1"],
@@ -155,7 +155,7 @@ function Fuzzy({ data }) {
   var fl = new FuzzyLogic();
   return (
     <>
-      <h3 style={{ display: 'flex', justifyContent: 'center' }} >El procentaje de sufrir de Ansiedad que tiene usted es de: {fl.getResult(obj)}%</h3>
+      <h3 style={{ display: 'flex', justifyContent: 'center' }} >El procentaje de sufrir de {topic} que tiene usted es de: {fl.getResult(obj)}%</h3>
       {console.log( data )}
     </>
   );

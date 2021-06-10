@@ -51,6 +51,16 @@ function Navbar() {
                       Ansiedad
                     </NavLink>
                   </li>
+                  <li className="nav-item">
+                    <NavLink
+                      activeClassName="active"
+                      className="nav-link"
+                      exact
+                      to="/depresion"
+                    >
+                      Depresion
+                    </NavLink>
+                  </li>
 
                 </ul>
               </div>
