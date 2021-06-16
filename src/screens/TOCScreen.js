@@ -3,10 +3,10 @@ import { Redirect } from "react-router";
 import Swal from "sweetalert2";
 
 import QuestionnaireAnx from "../components/questionaire_anx";
-import { QuestionsDep } from "../components/Questions";
+import { QuestionsTOC } from "../components/Questions";
 import Fuzzy from "../middlewares";
 
-export const DepresionScreen = () => {
+export const TOCScreen = () => {
   const [values, setvalues] = useState({});
   const [results, setResults] = useState(false);
   const [cancelQuestionnaire, setCancelQuestionnaire] = useState(false);
@@ -58,11 +58,11 @@ export const DepresionScreen = () => {
   return (
     <>
       <div className="container mb-5">
-        <h1>Depresion</h1>
+        <h1>TOC</h1>
         {results ? (
-          <Fuzzy data={values} topic="Depresion" />
+          <Fuzzy data={values} topic="TOC" />
         ) : (
-          QuestionsDep.map((question, key) => (
+          QuestionsTOC.map((question, key) => (
             <QuestionnaireAnx
               key={key}
               number={key + 1}

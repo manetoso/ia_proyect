@@ -6,6 +6,7 @@ export default function QuestionnaireAnx(props) {
   const handleChooise = (e) => {
     // console.log(e.target.value);
     setOptionSelected(e.target.value);
+    console.log(e.target.value);
     props.action(props.number, e.target.value);
   };
 
