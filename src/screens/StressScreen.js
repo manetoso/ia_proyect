@@ -1,13 +1,14 @@
+// import { result } from 'lodash';
 import React, { useState } from 'react'
 import { Redirect } from 'react-router';
 import Swal from "sweetalert2";
 import { useHistory } from 'react-router-dom';
 
 import QuestionnaireAnx from "../components/questionaire_anx";
-import { QuestionsAnx } from "../components/Questions";
+import { QuestionsStress } from "../components/Questions";
 import Fuzzy from "../middlewares";
 
-export const AnxietyScreen = () => {
+export const StressScreen = () => {
 
     let history =  useHistory()
 
@@ -45,7 +46,6 @@ export const AnxietyScreen = () => {
                 }
             })
     }
-
     const hadleCancel = () => {
         Swal.fire({
         title: "¿Está seguro de cancelar el test?",
@@ -86,14 +86,14 @@ export const AnxietyScreen = () => {
     return (
         <>
             <div className="container mb-5">
-            <h1>Ansiedad</h1>
+            <h1>Estrés postraumático</h1>
                 {
                     results
-                    ? ( <Fuzzy data={ values } topic="Ansiedad" /> )
+                    ? <Fuzzy data={ values } topic="Estrés postraumático" />
                     : ([
                         <h3>Indique su respuesta de acuerdo a los siguientes valores:</h3>,
                         <p className="lead">5 - Siempre , 4 - Casi siempre, 3 - En ocasiones, 2 - Casi nunca, 1 - Nunca </p>,
-                        QuestionsAnx.map((question, key) => (
+                        QuestionsStress.map((question, key) => (
                             <QuestionnaireAnx
                             key={key}
                             number={key + 1}
@@ -104,7 +104,7 @@ export const AnxietyScreen = () => {
                     ])
                 }
                 {
-                 results
+                results
                 ? (
                     <div className="d-flex justify-content-end">
                         <button 
@@ -137,6 +137,7 @@ export const AnxietyScreen = () => {
                     </button>
                 </div>)
                 }
+                
             </div>
         </>
     )

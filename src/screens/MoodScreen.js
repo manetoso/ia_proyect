@@ -2,12 +2,11 @@ import React, { useState } from 'react'
 import { Redirect } from 'react-router';
 import Swal from "sweetalert2";
 import { useHistory } from 'react-router-dom';
-
 import QuestionnaireAnx from "../components/questionaire_anx";
-import { QuestionsAnx } from "../components/Questions";
+import { QuestionsMood } from "../components/Questions";
 import Fuzzy from "../middlewares";
 
-export const AnxietyScreen = () => {
+export const MoodScreen = () => {
 
     let history =  useHistory()
 
@@ -44,7 +43,7 @@ export const AnxietyScreen = () => {
                     })
                 }
             })
-    }
+      }
 
     const hadleCancel = () => {
         Swal.fire({
@@ -86,14 +85,14 @@ export const AnxietyScreen = () => {
     return (
         <>
             <div className="container mb-5">
-            <h1>Ansiedad</h1>
+            <h1>Estado de animo</h1>
                 {
                     results
-                    ? ( <Fuzzy data={ values } topic="Ansiedad" /> )
+                    ? ( <Fuzzy data={ values } topic="Estado de animo" /> )
                     : ([
                         <h3>Indique su respuesta de acuerdo a los siguientes valores:</h3>,
                         <p className="lead">5 - Siempre , 4 - Casi siempre, 3 - En ocasiones, 2 - Casi nunca, 1 - Nunca </p>,
-                        QuestionsAnx.map((question, key) => (
+                        QuestionsMood.map((question, key) => (
                             <QuestionnaireAnx
                             key={key}
                             number={key + 1}
@@ -102,41 +101,42 @@ export const AnxietyScreen = () => {
                             />
                         ))
                     ])
-                }
+                }                
                 {
-                 results
-                ? (
-                    <div className="d-flex justify-content-end">
-                        <button 
-                        id="btn-infor"
-                        type="button"
-                        style={{ backgroundColor: "#607D8B" }}
-                        className="btn btn-secondary me-3"
-                        onClick={ handleInfo }
-                        > Mostrar Informacion de Contacto</button>
-                    </div>
-                )
-                :( <div className="d-flex justify-content-end">
-                    <button
-                        id="btn-cancel"
-                        type="button"
-                        style={{ backgroundColor: "#607D8B" }}
-                        className="btn btn-secondary me-3"
-                        onClick={ hadleCancel }
-                    >
-                        Cancelar
-                    </button>
-                    <button
-                        id="btn-send"
-                        type="button"
-                        style={{ backgroundColor: "#607D8B" }}
-                        className="btn btn-secondary"
-                        onClick={ handleSubmit }
-                    >
-                        Enviar
-                    </button>
-                </div>)
-                }
+                    results
+                        ? (
+                            <div className="d-flex justify-content-end">
+                                <button 
+                                id="btn-infor"
+                                type="button"
+                                style={{ backgroundColor: "#607D8B" }}
+                                className="btn btn-secondary me-3"
+                                onClick={ handleInfo }
+                                > Mostrar Informacion de Contacto</button>
+                            </div>
+                        )
+                        :( <div className="d-flex justify-content-end">
+                                <button
+                                    id="btn-cancel"
+                                    type="button"
+                                    style={{ backgroundColor: "#607D8B" }}
+                                    className="btn btn-secondary me-3"
+                                    onClick={ hadleCancel }
+                                >
+                                    Cancelar
+                                </button>
+                                <button
+                                    id="btn-send"
+                                    type="button"
+                                    style={{ backgroundColor: "#607D8B" }}
+                                    className="btn btn-secondary"
+                                    onClick={ handleSubmit }
+                                >
+                                    Enviar
+                                </button>
+                            </div>
+                        )
+                    }
             </div>
         </>
     )

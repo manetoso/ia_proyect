@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./questionaire.css";
+import icono  from "../images/icon.png"
 
 function Navbar() {
   return (
@@ -11,7 +12,8 @@ function Navbar() {
           to="/"
           style={{ letterSpacing: "3px", fontSize: "30px" }}
         >
-          LOGO
+          <img src={icono} style={{width: "50px", height: "50px"}} alt="..." />
+        
         </Link>
         <button
           className="navbar-toggler"
@@ -54,7 +56,7 @@ function Navbar() {
                 exact
                 to="/depresion"
               >
-                Depresion
+                Depresión
               </NavLink>
             </li>
             <li className="nav-item">
@@ -65,6 +67,36 @@ function Navbar() {
                 to="/toc"
               >
                 TOC
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                activeClassName="active"
+                className="nav-link"
+                exact
+                to="/mood"
+              >
+                Estado de animo
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                activeClassName="active"
+                className="nav-link"
+                exact
+                to="/stress"
+              >
+                Estrés postraumático
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                activeClassName="active"
+                className="nav-link"
+                exact
+                to="/info"
+              >
+                Información
               </NavLink>
             </li>
           </ul>

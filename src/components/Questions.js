@@ -69,3 +69,56 @@ export const QuestionsTOC = [
     acumulación de cosas que congestionan y abarrotan las zonas 
     habitables y alteran en gran medida su uso previsto?`,
 ];
+export const QuestionsMood = [
+  `¿Ha tenido disminución de la necesidad de dormir? p. ej., se siente
+  descansado después de sólo tres horas de sueño`,
+  `¿Casi todos los días ha tenido fugas de ideas o sensaciones donde
+  sus pensamientos van a gran velocidad?`,
+  `¿Los delirios o alucinaciones están presentes en cualquier momento
+  de casi todos tus días?`,
+  `¿Casi todos los días tiene facilidad de distraerse? (es decir, su
+    atención cambia demasiado fácilmente a estímulos como poco
+    importantes o irrelevantes)`,
+  `¿Últimamente suele ser más hablador de lo habitual o siente presión
+  para mantener la conversación?`,
+  `¿Casi todos los días ha tenido un aumento repentino de autoestima
+  o sentimiento de grandeza?`,
+  `¿Ha tenido casi todos los días participación excesiva en actividades
+  que tienen muchas posibilidades de consecuencias dolorosas? (p.
+  ej., dedicarse de forma desenfrenada a compras, fiestas de excesos,
+  o inversiones de dinero imprudentes)`,
+  `¿Ha tenido últimamente días donde tiene importantes y persistentes
+  de estados de ánimo anormalmente elevados, expansivos o
+  irritables, así como aumento anormal de la actividad o la energía
+  que predomina en usted?`,
+  `¿Casi todos los días siente que podría perder el control de sí mismo?`,
+  `¿Casi todos los días duda de sus capacidades, logros, etc.?`
+];
+export const QuestionsStress = [
+  `¿Se ha encontrado últimamente en exposición repetida o extrema
+  a detalles repulsivos del suceso(s) traumático(s)? (p. ej.,
+  socorristas que recogen restos humanos; policías repetidamente
+  expuestos a detalles del maltrato infantil)`,
+  `¿Tiene episodios recurrentes de irritabilidad, tristeza o miedo
+  inexplicado que son evidentes incluso durante las interacciones no
+  amenazadoras?`,
+  `¿Es capaz de recordar un aspecto importante de algún suceso(s)
+  traumático(s)?`,
+  `¿Tiene recuerdos angustiosos recurrentes, involuntarios e intrusivos
+  del suceso(s) traumático(s)?`,
+  `¿Tiende a evitar recordatorios externos (personas, lugares,
+    conversaciones, actividades, objetos, situaciones) que despiertan
+    recuerdos, pensamientos o sentimientos angustiosos acerca o
+    estrechamente asociados al suceso(s) traumático(s)?`,
+  `¿Tienes creencias o expectativas negativas persistentes y
+  exageradas sobre ti mismo, los demás o el mundo casi siempre? (p.
+  ej., “Estoy mal,” “No puedo confiar en nadie,” “El mundo es muy
+  peligroso,” “Tengo los nervios destrozados”)`,
+  `¿Casi siempre te encuentras en un estado emocional negativo
+  persistente? (p. ej., miedo, terror, enfado, culpa o vergüenza).`,
+  `¿Últimamente tienes incapacidades persistentes de experimentar
+  emociones positivas? (p. ej., felicidad, satisfacción o sentimientos
+  amorosos).`,
+  `¿Casi siempre tiene problemas de concentración?`,
+  `¿Últimamente tiene alteraciones del sueño (p. ej., dificultad para conciliar o continuar el sueño, o sueño inquieto)?`
+];
