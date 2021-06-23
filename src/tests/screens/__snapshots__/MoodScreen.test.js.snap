@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing in <AnxietyScreen /> should show the screen correctly 1`] = `
+exports[`Testing in <MoodScreen /> should show the screen correctly 1`] = `
 <Fragment>
   <div
     className="container mb-5"
   >
     <h1>
-      Ansiedad
+      Estado de animo
     </h1>
     <h3
       key="01"
@@ -23,75 +23,74 @@ exports[`Testing in <AnxietyScreen /> should show the screen correctly 1`] = `
       action={[Function]}
       key="0"
       number={1}
-      question="¿Te llegas a sentir de forma muy incómoda en situaciones sociales
-    como en conversaciones, mientras estas comiendo/bebiendo o dar 
-    alguna charla por miedo a ser examinado o juzgado?"
+      question="¿Ha tenido disminución de la necesidad de dormir? p. ej., se siente
+  descansado después de sólo tres horas de sueño"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="1"
       number={2}
-      question="¿Te cohíbes en tu forma de ser o no actúas de cierta manera para 
-    que no te humillen o recibas algún tipo de rechazo social?"
+      question="¿Casi todos los días ha tenido fugas de ideas o sensaciones donde
+  sus pensamientos van a gran velocidad?"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="2"
       number={3}
-      question="Ahora piensa que estas en una reunión con tus amigos, pero 
-    también con personas que no conoces ¿Sientes incomodidad o 
-    miedo para expresarte o comportarte como normalmente lo haces?"
+      question="¿Los delirios o alucinaciones están presentes en cualquier momento
+  de casi todos tus días?"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="3"
       number={4}
-      question="Con frecuencia evito situaciones sociales ya que estas me llegan a 
-    causar incomodidad o hasta miedo."
+      question="¿Casi todos los días tiene facilidad de distraerse? (es decir, su
+    atención cambia demasiado fácilmente a estímulos como poco
+    importantes o irrelevantes)"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="4"
       number={5}
-      question="Es tanto mi miedo a las situaciones sociales a tal grado que no solo 
-    me afecta en lo social, también me afecta en el campo laboral."
+      question="¿Últimamente suele ser más hablador de lo habitual o siente presión
+  para mantener la conversación?"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="5"
       number={6}
-      question="¿Cuándo estoy en situaciones donde tengo que involucrarme 
-    socialmente llego a padecer algún síntoma de ansiedad como por 
-    ejemplo palpitaciones, temblores, molestias gastrointestinales o 
-    tensión muscular?"
+      question="¿Casi todos los días ha tenido un aumento repentino de autoestima
+  o sentimiento de grandeza?"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="6"
       number={7}
-      question="¿Esta ansiedad o miedo a las situaciones sociales a durado más de 
-    6 meses?"
+      question="¿Ha tenido casi todos los días participación excesiva en actividades
+  que tienen muchas posibilidades de consecuencias dolorosas? (p.
+  ej., dedicarse de forma desenfrenada a compras, fiestas de excesos,
+  o inversiones de dinero imprudentes)"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="7"
       number={8}
-      question="Evito socializar o situaciones sociales porque padezco una 
-    disformidad corporal u algún tipo de problema de salud."
+      question="¿Ha tenido últimamente días donde tiene importantes y persistentes
+  de estados de ánimo anormalmente elevados, expansivos o
+  irritables, así como aumento anormal de la actividad o la energía
+  que predomina en usted?"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="8"
       number={9}
-      question="Evito socializar o situaciones sociales porque padezco una 
-    disformidad corporal u algún tipo de problema de salud."
+      question="¿Casi todos los días siente que podría perder el control de sí mismo?"
     />
     <QuestionnaireAnx
       action={[Function]}
       key="9"
       number={10}
-      question="La ansiedad o miedo que siento, no solo me ocurre en 
-    situaciones donde se me involucre socialmente."
+      question="¿Casi todos los días duda de sus capacidades, logros, etc.?"
     />
     <div
       className="d-flex justify-content-end"

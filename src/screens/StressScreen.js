@@ -91,8 +91,8 @@ export const StressScreen = () => {
                     results
                     ? <Fuzzy data={ values } topic="Estrés postraumático" />
                     : ([
-                        <h3>Indique su respuesta de acuerdo a los siguientes valores:</h3>,
-                        <p className="lead">5 - Siempre , 4 - Casi siempre, 3 - En ocasiones, 2 - Casi nunca, 1 - Nunca </p>,
+                        <h3 key="01">Indique su respuesta de acuerdo a los siguientes valores:</h3>,
+                        <p className="lead" key="02">5 - Siempre , 4 - Casi siempre, 3 - En ocasiones, 2 - Casi nunca, 1 - Nunca </p>,
                         QuestionsStress.map((question, key) => (
                             <QuestionnaireAnx
                             key={key}

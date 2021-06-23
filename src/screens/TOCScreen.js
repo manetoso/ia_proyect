@@ -95,8 +95,8 @@ export const TOCScreen = () => {
             <Fuzzy data={values} topic="TOC" />
           ) 
           : ([
-            <h3>Indique su respuesta de acuerdo a los siguientes valores:</h3>,
-            <p className="lead">5 - Siempre , 4 - Casi siempre, 3 - En ocasiones, 2 - Casi nunca, 1 - Nunca </p>,
+            <h3 key="01">Indique su respuesta de acuerdo a los siguientes valores:</h3>,
+            <p className="lead" key="02">5 - Siempre , 4 - Casi siempre, 3 - En ocasiones, 2 - Casi nunca, 1 - Nunca </p>,
             QuestionsTOC.map((question, key) => (
               <QuestionnaireAnx
                 key={key}
