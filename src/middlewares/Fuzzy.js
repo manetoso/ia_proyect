@@ -155,9 +155,9 @@ function Fuzzy({ data, topic }) {
   var fl = new FuzzyLogic();
   return (
     <>
-      <h3 style={{ display: 'flex', justifyContent: 'center' }} >El procentaje de sufrir de {topic} que tiene usted es de: {fl.getResult(obj)}%</h3>
+      <h3 style={{ display: 'flex', justifyContent: 'center' }} >El procentaje de sufrir de {topic} que tiene usted es de <strong>: {fl.getResult(obj).toString().substring(0,5)}%</strong></h3>
       {console.log( data )}
-    </>
+	</>
   );
 }
 

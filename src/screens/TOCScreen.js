@@ -88,7 +88,7 @@ export const TOCScreen = () => {
   return (
     <>
       <div className="container mb-5">
-        <h1>TOC</h1>
+        <h1>Trastorno Obsesivo Compulsivo ( TOC )</h1>
         {
         results ? 
           (
